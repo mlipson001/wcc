@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="img/w.ico">
+
+  <title>Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/bootstrap-magic.css" rel="stylesheet">
+  <link href="css/forkit.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Kameron|Sansita+One" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="imageholder">
+    <div class="container-fluid">
+      <div id="navbar-spacer-top"></div>
+      <nav class="navbar navbar-default navbar-padding" id="menu">
+        <!--    <div class="container-fluid"> -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="hamburger">
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span> 
+            </button>
+          <a class="navbar-brand navbar-padding" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+            <li><a href="investorrelations.html">Investor Relations</a></li>
+          </ul>
+        </div>
+        <!--    </div> -->
+      </nav>
+      <noscript>
+    <h3>No script menu: </h3>
+          <ul>  
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="investorrelations.html">Investor Relations</a></li>
+          </ul>  
+  </noscript>
+
+    </div>
+  </div>
+  <ul class="nav nav-pills row-fluid" id="submenu">
+    <li class="active" ><a id="portfolio" href="#" onclick="displayit('portfolio');return false;">Entire Portfolio</a></li>
+    <li><a id="east" href="#" onclick="displayit('east');return false;">East</a></li>
+    <li><a id="west" href="#" onclick="displayit('west');return false;">West</a></li>
+    <li><a id="central" href="#" onclick="displayit('central');return false;">Central</a></li>
+    <li><a id="south" href="#" onclick="displayit('south');return false;">South</a></li>
+  </ul>
+
+  <div class="containter">
+
+    <div id="navbar-spacer" class="navbar-padding"></div>
+    <div class="row">
+
+      <div class="col-md-6">
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/empire-state.jpg" class="img-responsive" alt="Empire State Building" />
+              <div class="carousel-caption">
+                <h3>Empire State Building</h3>
+                <p>New York, NY</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/tower.jpg" Alt="Transamerica Pyramid" class="img-responsive" />
+              <div class="carousel-caption">
+                <h3>Transamerica Pyramid</h3>
+                <p>San Francisco, CA</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/willis-tower.jpg" class="img-responsive" alt="Willis Tower" />
+              <div class="carousel-caption">
+                <h3>Willis Tower</h3>
+                <p>Chicago, IL</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/flatiron.jpg" class="img-responsive" alt="Flat Iron Building" />
+              <div class="carousel-caption">
+                <h3>Flat Iron Building</h3>
+                <p>New York, NY</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/suntrust-plaza.jpg" class="img-responsive" alt="Sun Trust Plaza" />
+              <div class="carousel-caption">
+                <h3>Sun Trust Plaza</h3>
+                <p>Atlanta, GA</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/two-california-plaza.jpg" class="img-responsive" alt="Two California Plaza" />
+              <div class="carousel-caption">
+                <h3>Two California Plaza</h3>
+                <p>Los Angeles, CA</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <iframe id="portfoliomap" src="//www.google.com/maps/embed/v1/place?q=Empire%20State%20Building,New%20York,NY
+      &zoom=30
+      &key=AIzaSyCmnOZpyCVEipAkfCFmO0JLPzd_ZSGpzs8" margin="auto" height="400px" width="600px">
+  </iframe>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <br><br>
+    <div class="row">
+      <div>
+        <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image1" class="img-thumbnail img-responsive east portfolio" src="img/empire-state-tn.jpg" alt="Empire State Building">
+          <!--Modal-->
+          <div id="image1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!--content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Empire State Building</h4>
+                </div>
+                <div class="modal-body">
+                  <p>A $250mn loan on a landmark office building in New York, NY</p>
+                  <img src="img/empire-state.jpg" alt="Empire State Building">
+
+                </div>
+                <div class="modal-footer">
+                  <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('empire')">
+                  <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!---</div>-->
+      <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image2" class="img-thumbnail img-responsive west portfolio" src="img/tower-tn.jpg" Alt="Transamerica Pyramid">
+        <!--Modal-->
+        <div id="image2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!--content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Transamerica Pyramid</h4>
+              </div>
+              <div class="modal-body">
+                <p>A $100mn loan on a famous office building in San Francisco, CA</p>
+                <img src="img/tower.jpg" alt="Transamerica Pyramid">
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('transamerica')">
+                <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image3" class="img-thumbnail img-responsive central portfolio" src="img/willis-tower-tn.jpg" Alt="Willis Tower">
+        <!--Modal-->
+        <div id="image3" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!--content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Willis Tower</h4>
+              </div>
+              <div class="modal-body">
+                <p>A $240mn loan on the tallest building in Chicago, IL</p>
+                <img src="img/willis-tower.jpg" alt="Willis Tower">
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('willis')">
+                <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image4" class="img-thumbnail img-responsive east portfolio" src="img/flatiron-tn.jpg" alt="Flat Iron Building">
+        <!--Modal-->
+        <div id="image4" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!--content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Flat Iron Building</h4>
+              </div>
+              <div class="modal-body">
+                <p>A $75mn loan on a historic office building in New York, NY</p>
+                <img src="img/flatiron.jpg" alt="Flat Iron Building">
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('flatiron')">
+                <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image5" class="img-thumbnail img-responsive south portfolio" src="img/suntrust-plaza-tn.jpg" alt="Sun Trust" />
+        <!--Modal-->
+        <div id="image5" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!--content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Suntrust Plaza</h4>
+              </div>
+              <div class="modal-body">
+                <p>A $200mn loan on an important office building located in Atlanta, GA</p>
+                <img src="img/suntrust-plaza.jpg" alt="Sun Trust Plaza">
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('suntrust')">
+                <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6"><img data-toggle="modal" data-target="#image6" class="img-thumbnail img-responsive west portfolio" src="img/two-california-plaza-tn.jpg" alt="Two California Plaza">
+        <!--Modal-->
+        <div id="image6" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!--content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Two California Plaza</h4>
+              </div>
+              <div class="modal-body">
+                <p>A $90mn loan on the fourth tallest building in Los Angeles, CA</p>
+                <img src="img/two-california-plaza.jpg" alt="Two California Plaza">
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-sm btn-warning mapit" value="Map it" onclick="mapit('twocalifornia')">
+                <button type="button" class="btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- The contents (if there's no contents the ribbon acts as a link) -->
+  <div class="forkit-curtain">
+    <div class="close-button"><span class="glyphicon glyphicon-remove-circle"></span></div>
+    <h2>Incoming Message</h2>
+    <p>I received your message Mr. Wayne and will bring you the car.<br>Alfred</p>
+  </div>
+
+  <!-- The ribbon -->
+  <a class="forkit noopacity" id="tsribbon" data-text="Top Secret" data-text-detached="Drag down >" href="https://github.com/hakimel/forkit.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+      alt="Fork me on GitHub"></a>
+
+
+
+  <div id="footer">
+    <div class="copyright">
+      <p>© Copyright 2016, Wayne Capital Corp, All Rights Reserved.</p>
+    </div>
+    <div class="contact-privacy">
+      <a href="investorrelations.html ">Contact Us</a>
+      <p class="inlineitem ">|</p>
+      <a href="privacy.html ">Privacy Policies</a>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js "></script>
+  <script src="js/bootstrap.min.js "></script>
+  <script src="js/forkit.js"></script>
+  <script src="js/main.js "></script>
+</body>
+
+</html>
