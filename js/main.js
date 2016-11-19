@@ -67,18 +67,28 @@ function displayit(className){
         console.log(className);
         console.log(this);
         if ($(this).hasClass(className)) {
-            $(this).show();//addClass("showit");
-//            $(this).removeClass("hideit");
+            $(this).show();
         }
        else {
-           $(this).hide();
-        //    $(this).addClass("hideit");
-         //   $(this).removeClass("hideit");
-        
+           $(this).slideUp(1000, function(){});
+
         }
     });    
 }
 
+function sendform() {
+    if($("#emailaddress").val()!=="") {
+        alert ('Hello there '+$("input:text").val()+', we will send a copy of the privacy policy to '+$("#emailaddress").val()+'.');
+        $("input:text").val("");
+        $("#emailaddress").val("");
+        
+        
+    }
+    else{
+        alert ('Please Enter an Email Address');
+    }
+    
+}
 $(document).ready(function() {
     // make the menu static before leaving screen
     var menu = $('#menu');
