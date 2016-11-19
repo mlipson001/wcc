@@ -90,7 +90,7 @@
             <p>WCC is headquartered in New York City.</p>
             <img src="img/businessmen.jpg" alt="Businessmen" class="maximagesize" />
           </div>
-          <div class="col-md-5 contact-class">
+          <div class="col-md-3 contact-class">
             <h3>Contact Information</h3>
             <br>
             <h4>Investor Relations</h4>
@@ -104,7 +104,18 @@
             <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:investor@waynecc.com?subject=Investor%20Question&body=My%20question%20follows%0A%0A%0ARegards%20">investor@waynecc.com</a></p>
 
           </div>
+          <div class="col-md-2 contact-class">
+            <h3>Request a Site Privacy Policy</h3>
+            <form id="myForm" onsubmit="sendform();return false;" action="" method="submit"> 
+                <div><label>Name:</label> <input type="text" name="name" id="name" /></div> 
+                <div><label>Email:</label> <input type="email" pattern="[^ @]*@[^ @]*" value="" id="emailaddress"/></div>
+                <div><label>Comment:</label> <textarea name="comment"></textarea></div>
+                
+                <div><label></label><input type="submit" value="Submit Request" class="btn btn-default" /> </div>
+            </form>
+          </div>
         </div>
+        
       </div>
       <div class="tab-pane" id="tab2">
         <div class="container-fluid header-margin-10">
